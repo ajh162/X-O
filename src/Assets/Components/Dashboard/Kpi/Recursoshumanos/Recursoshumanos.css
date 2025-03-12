@@ -1,0 +1,312 @@
+.rrhh-container {
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .rrhh-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .rrhh-title h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-text-color, #333);
+  }
+  
+  .date-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--secondary-text-color, #666);
+    font-size: 0.8rem;
+  }
+  
+  .metrics-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .metrics-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .metrics-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .metric-card {
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: linear-gradient(135deg, #4a90e2 0%, #a5d8ff 100%);
+    color: white;
+    /* Make the card more compact */
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+  
+  .metric-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .metric-card .p-card-body {
+    padding: 0.5rem;
+  }
+  
+  .metric-card .p-card-content {
+    padding: 0.5rem 0;
+  }
+  
+  .metric-card .p-card-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0;
+  }
+  
+  .metric-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .metric-icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .metric-data {
+    flex: 1;
+  }
+  
+  .metric-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    color: white;
+  }
+  
+  .metric-change {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0.15rem 0 0;
+    font-size: 0.7rem;
+  }
+  
+  .positive {
+    color: #14aa34;
+  }
+  
+  .negative {
+    color: #f87171;
+  }
+  
+  .charts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .charts-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .chart-card {
+    height: 100%;
+    background: linear-gradient(135deg, #4a90e2 0%, #a5d8ff 100%);
+    color: white;
+    padding: 0.5rem;
+  }
+  
+  .chart-card .p-card-body {
+    padding: 0.5rem;
+  }
+  
+  .chart-card .p-card-content {
+    padding: 0.5rem 0;
+  }
+  
+  .chart-card .p-card-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0;
+  }
+  
+  .chart-container {
+    height: 220px;
+    width: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .p-card .p-card-title {
+    color: white;
+    font-weight: 600;
+  }
+  
+  .hr-additional {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .hr-additional {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .additional-card {
+    background: linear-gradient(135deg, #4a90e2 0%, #a5d8ff 100%);
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    padding: 0.5rem;
+  }
+  
+  .additional-card .p-card-body {
+    padding: 0.5rem;
+  }
+  
+  .additional-card .p-card-content {
+    padding: 0.5rem 0;
+  }
+  
+  .additional-card .p-card-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0;
+  }
+  
+  .interview-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .interview-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .interview-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .interview-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .interview-name {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  
+  .interview-position {
+    font-size: 0.75rem;
+    opacity: 0.8;
+  }
+  
+  .interview-date {
+    font-size: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.15rem 0.35rem;
+    border-radius: 4px;
+  }
+  
+  .requests-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .request-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  
+  .request-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .request-type {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  
+  .request-employee {
+    font-size: 0.75rem;
+    opacity: 0.8;
+  }
+  
+  .request-actions {
+    display: flex;
+    gap: 0.35rem;
+  }
+  
+  .approve-btn,
+  .reject-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.75rem;
+  }
+  
+  .approve-btn {
+    background-color: rgba(52, 211, 153, 0.2);
+    color: #14aa34  ;
+  }
+  
+  .approve-btn:hover {
+    background-color: rgba(52, 211, 153, 0.4);
+  }
+  
+  .reject-btn {
+    background-color: rgba(248, 113, 113, 0.2);
+    color: #ff0000;
+  }
+  
+  .reject-btn:hover {
+    background-color: rgba(248, 113, 113, 0.4);
+  }
+  
+  

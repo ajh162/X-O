@@ -1,0 +1,144 @@
+.finanzas-container {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.finanzas-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.finanzas-title h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-text-color, #333);
+}
+
+.date-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--secondary-text-color, #666);
+  font-size: 0.9rem;
+}
+
+.metrics-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .metrics-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .metrics-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.metric-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.metric-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.metric-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.revenue-icon {
+  background-color: rgba(52, 211, 153, 0.1);
+  color: #14aa33;
+}
+
+.expense-icon {
+  background-color: rgba(248, 113, 113, 0.1);
+  color: #ff0000;
+}
+
+.profit-icon {
+  background-color: rgba(96, 165, 250, 0.1);
+  color: #14aa33;
+}
+
+.margin-icon {
+  background-color: rgba(167, 139, 250, 0.1);
+  color: #14aa33;
+}
+
+.metric-data {
+  flex: 1;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.metric-change {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+}
+
+.positive {
+  color: #14aa34 !important; /* Usa !important solo si es necesario */
+}
+
+
+  .negative {
+    color: #ff0000 !important;
+  }
+
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .charts-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.chart-card {
+  height: 100%;
+}
+
+.chart-container {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
