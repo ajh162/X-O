@@ -66,3 +66,21 @@
         width: 100%;
     }
 }
+
+/* Centrar los elementos principales del MegaMenu */
+.custom-megamenu .p-megamenu {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+/* Asegurar que la lista de elementos también esté centrada */
+.custom-megamenu .p-megamenu-root-list {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ocupar todo el ancho disponible */
+}
+
+/* Ajustar margen entre los botones */
+.custom-megamenu .p-menuitem {
+    margin: 0 15px; /* Espaciado entre botones */
+}
